@@ -1,0 +1,25 @@
+{
+  "name": "yt-downloader",
+  "version": "1.0.0",
+  "description": "Youtube Downloader",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "youtube",
+    "node",
+    "fullstack"
+  ],
+  "author": "Victoria Luquet",
+  "license": "MIT",
+  "dependencies": {
+    "connect-livereload": "^0.6.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "livereload": "^0.9.1",
+    "pug": "^3.0.0",
+    "ytdl-core": "^2.1.7"
+  }
+}

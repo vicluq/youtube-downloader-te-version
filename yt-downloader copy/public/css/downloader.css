@@ -1,0 +1,171 @@
+.downloader-page {
+    display: grid;
+    grid-template-rows: 60% 40%;
+    justify-self: center;
+}
+
+/* CONTENT FORM DIV */
+.content-div {
+    width: 600px;
+    
+    display: grid;
+    justify-self: center;
+    align-content: center;
+    grid-template-rows: max-content max-content;
+    
+}
+
+.form-div form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-div form .more-opt-fieldset {
+   margin: 20px 0;
+   padding: 10px;
+
+   display: flex; 
+   justify-content: space-around;
+   align-items: center;
+
+   /* border-top: 3px solid #cc0000;
+   border-bottom: 3px solid #cc0000; */
+   background-color: #cc00005b;
+   border-radius: 3px;
+}
+
+/* VIDEO FORMAT */
+
+.form-div h2 {
+    border-bottom: 2px solid #cc0000;   
+}
+
+.form-url-field {
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-url-field label {
+    font-weight: bold;
+    padding: 5px;
+    /* background-color: #cc0000; */
+    color: #000;
+    border: 1.7px solid #cc0000;
+}
+
+.form-url-field input {
+    width: 60%;
+    margin-left: 10px;
+    outline: none;
+    padding: 6px;
+    border: 1.5px solid #cc0000;
+    border-radius: 5px;
+
+    transition: all 0.3s;
+}
+
+.form-url-field input:focus {
+    width: 80%;
+}
+
+.form-format-field .options {
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-format-field .options div {
+    padding: 5px;
+    border: 1.6px solid #cc0000;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.form-format-field .options .video-format:hover {
+    background-color: #cc00004d;
+}
+
+.form-format-field .options .video-format.selected {
+    background-color: #cc0000;
+    color: #fff;
+}
+
+/* QUALITY FIELD */
+.form-quality-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-quality-field div {
+    margin-top: 5px;
+    display: flex;
+}
+
+.form-quality-field div select {
+    padding: 4px;
+    outline: none;
+    border: 1.6px solid #cc0000;
+    cursor: pointer;
+}
+
+.form-quality-field div select:hover {
+    background-color: #cc00004d;
+}
+
+.form-quality-field div.disabled {
+    display: none;
+}
+
+/* INSTRUCTIONS DIV */
+
+.instructions-div {
+    margin-top: 5%;
+}
+
+.instructions-div h2 {
+    width: 100%;
+    border-bottom: 2px solid #cc0000;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* FORM BUTTON */
+
+.form-div form button {
+    width: 100px;
+    align-self: center;
+    padding: 5px;
+    
+    box-shadow: 1px 2px 5px 3px rgba(0, 0, 0, 0.15);
+    
+    background-color: #cc0000;
+    border-radius: 100px;
+    border: 2px solid transparent;
+    
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: all 0.3s;
+}
+
+.form-div form button:hover {
+    box-shadow: none;
+    background-color: #e41a1a;
+}
+
+.instructions-div pre p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+@media (max-width: 401px) {
+    .content-div {
+        width: 90%;
+    } 
+}
