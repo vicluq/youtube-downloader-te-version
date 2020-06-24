@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/index.css")
+        link(rel="stylesheet", href="/css/downloader.css")
+        title Youtube Downloader
+    body
+
+        include ./template/header.pug
+
+        main.downloader-page
+        
+            div(class='content-div')
+                
+                h2.downloader-title Download a Video
+                
+                div(class='form-div')
+                    form.download-info(method='POST')
+                        label(for='video-url') Add a URL
+                        input#video-url(type="text", name="video_url")
+                        button.more-options More Options...
+                        fieldset.more-opt-fieldset
+                            legend More Download Options
+                        
+                        button.submit-button(type="submit") Download
+        
+        footer
+            p support us on github
+        script(src="/js/index.js")
